@@ -1,77 +1,247 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  #main h4{
-    color: grey;
-  }
-  #main .images  {
-    display: flex;
-    justify-content: space-between ;
-    height: 40px;
-    margin-left: 250px;
-    margin-right: 250px;
-  }
-
-  .cardtext{
-    margin: 80px auto;
-  }
-
-  .imagetext{
-    display: flex;
-    justify-content: space-between;
-  }
-  .imagetext img{
-    margin-left: 80px;
-  }
-  #Upcoming {
-    background-color: rgb(250,250,250);
-    height: 256px;
-    width: 100%;
-    left: 0px;
-    top: 80px;
-    border-radius: 0px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-#Upcoming h1{
-    color: rgb(31,150,223); 
-    padding-top: 100px;
+
+.navbar {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+
+.navbar ul li {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.join {
+  background-color: #0087db;
+  border-radius: 5px;
+  border: none;
+}
+
+#main h4 {
+  color: grey;
+}
+
+#main .images {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.cardtext {
+  margin: 80px auto;
+}
+
+.imagetext {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagetext img {
+  margin-left: 80px;
+}
+
+#Upcoming {
+  background-color: rgb(250, 250, 250);
+  height: 400px;
+  width: 100%;
+  left: 0px;
+  top: 80px;
+  border-radius: 0px;
+}
+
+#Upcoming h1 {
+  color: rgb(31, 150, 223);
+  padding-top: 30px;
+}
+
+.formbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 30px;
+}
+
+.footer button {
+  background-color: #0087db;
+  width: 12%;
+  height: 50px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+}
+
+.footer #inputEmail {
+  border-radius: 8px;
+  width: 500px;
+  height: 50px;
+  padding: 15px;
+  border: none;
+}
+
+#text {
+  text-align: left;
+}
+#text2 {
+  text-align: left;
+}
+#text3 {
+  text-align: left;
+}
+#text4 {
+  text-align: left;
+}
+
+.footertext {
+  padding-top: 50px;
+  justify-content: space-around;
+  color: white;
+}
+
+.footertext ul li {
+  list-style-type: none;
+}
+.footertext ul li a {
+  color: white;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
+
+.footerimage {
+  margin-left: 50px;
+}
+
+.brands {
+  margin-right: 90px;
+}
+
+.brands i {
+  margin-left: 15px;
+}
+.copyright{
+  color: white;
+  font-size: small;
+  margin-left: 50px;
+}
+
+.links{
+  font-size: 13px;
+ 
+}
+
+.links a {
+  color: #0087db;
+  font-weight: 700;
 }
 
 /* Media Query */
 @media screen and (max-width: 768px) {
-  .navbar-brand img {
-    width: 106px;
-    height: 80px;
+  * {
+    overflow-x: hidden;
   }
-
-  #main .images {
+  .navbar img {
+    width: 30px;
+    height: 30px;
+  }
+  .join {
+    width: 32%;
+  }
+  /* #main .images {
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
     padding: 15px;
-  }
-  .imagetext {
+  } */
+  .imagetext, .imagetext2, .imagetext3 {
     flex-direction: column;
   }
-  .imagetext2 {
-    flex-direction: column;
-  }
-  .imagetext3 {
-    flex-direction: column;
-  }
-  .imagetext img, .imagetext2 img, .imagetext3 img {
-    width: 85%;
-  }
-  .imagetext h2, .imagetext p, .imagetext2 h2, .imagetext2 p, .imagetext3 h2, .imagetext3 p{
+
+  .imagetext h2,
+  .imagetext p,
+  .imagetext2 h2,
+  .imagetext2 p,
+  .imagetext3 h2,
+  .imagetext3 p {
     flex-direction: column;
     padding: 5px;
   }
+  
+  .imagetext img{
+    margin-left: 25px;
+  }
+
+  .imagetext2 img{
+    margin-right: 45px;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .imagetext2 h2{
+    margin-top: 10px;
+  }
+
+  .imagetext3 img{
+    width: 83%;
+    align-items: center;
+    justify-content: center;
+  }
+
   #Upcoming {
     width: 100%;
   }
-  #footer{
+
+  .footer {
     padding: 15px;
-}
+  }
+
+  .footertext {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  
+  .formbutton {
+    flex-direction: column;
+  }
+  
+  .emailadd{
+    width: 70%;
+    border-radius: 10px;
+  }
+
+  .subscribe{
+    width: 100%;
+    padding-right: 90px;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+
+  .footertext{
+    display: flex;
+    flex-direction: column;
+  }
+  .footertext .footerimage{
+    width: 70%;
+    align-items: left;
+    /* -right: 250px; */
+  }
+
+  #text{
+    display: block;
+    flex-direction: column;
+    width: 100%;
+  }
 }
